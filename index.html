@@ -475,6 +475,25 @@
             </li>
           </ul>
         </div>
+        <div class="form-container">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <input
+                class="subscribe-input"
+                type="text"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg class="subscribe-svg" width="24" height="24">
+                <use href="./images/icon-frame.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -482,60 +501,90 @@
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="icon-close-button" width="8" height="8">
-            <use href="./images/icons1.svg#icon-close-black"></use>
+            <use
+              class="use-icon"
+              href="./images/icons1.svg#icon-close-black"
+            ></use>
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
+
         <form class="modal-form">
-          <fieldset class="fieldset-list">
-            <legend></legend>
-            <label class="form-label">
-              Name
-              <div class="input-wrapper">
-                <svg class="name-icon" width="18" height="18">
-                  <use href="./images/icons1.svg#icon-person-black"></use>
-                </svg>
-                <input class="form-input" type="text" name="name" />
-              </div>
-            </label>
-            <label class="form-label"
-              >Phone
-              <div class="input-wrapper">
-                <svg class="name-icon" width="18" height="24">
-                  <use href="./images/icons1.svg#icon-phone-black"></use>
-                </svg>
-                <input class="form-input" type="tel" name="phone" />
-              </div>
-            </label>
-            <label class="form-label">
-              Email
-              <div class="input-wrapper">
-                <svg class="name-icon" width="18" height="24">
-                  <use href="./images/icons1.svg#icon-email-black"></use>
-                </svg>
-                <input class="form-input" type="email" name="email" />
-              </div>
-            </label>
-            <label class="form-label-textarea">
-              Comment
-              <textarea
-                class="textarea-label"
-                name="comment"
-                placeholder="Text input"
-              ></textarea>
-            </label>
-            <label class="form-label-inline">
+          
+          <div class="fieldset-list">
+            <label for="user-name" class="form-label">Name</label>
+            <div class="input-wrapper">
               <input
-                class="form-input-policy"
-                type="checkbox"
-                name="privacy-policy"
-                value="privacy-policy"
+                id="user-name"
+                class="form-input"
+                type="text"
+                name="user-name"
               />
-              I accept the terms and conditions of the
+              <svg class="name-icon" width="18" height="24">
+                <use href="./images/icons1.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="fieldset-list">
+            <label for="user-phone" class="form-label"> Phone </label>
+            <div class="input-wrapper">
+              <input
+                id="user-phone"
+                class="form-input"
+                type="tel"
+                name="user-phone"
+              />
+              <svg class="name-icon" width="18" height="24">
+                <use href="./images/icons1.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="fieldset-list">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="input-wrapper">
+              <input
+                id="user-email"
+                class="form-input"
+                type="email"
+                name="user-email"
+              />
+              <svg class="name-icon" width="18" height="24">
+                <use href="./images/icons1.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="fieldset-list">
+            <label class="form-label" for="user-comment"> Comment </label>
+            <textarea
+              class="textarea-label"
+              name="user-comment"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
+
+          <div class="fieldset-list-checkbox">
+            <input
+              id="user-privacy"
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="form-label-inline" for="user-privacy"
+              >I accept the terms and conditions of the<span
+                class="span-privacy"
+              ></span>
               <a class="privacy-link" href="">Privacy Policy</a>
             </label>
-          </fieldset>
-          <button class="modal-button" type="submit">Send</button>
+          </div>
+
+          <div class="fieldset-list-checkbox">
+            <button class="modal-button" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
