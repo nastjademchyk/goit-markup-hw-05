@@ -636,7 +636,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
+  /* gap: 8px; */
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -648,6 +648,10 @@ section {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+  width: 100%;
+  text-align: left;
+  text-indent: 0;
+
 }
 .input-wrapper {
   position: relative;
@@ -848,6 +852,11 @@ textarea::placeholder {
 
 .fieldset-list-checkbox {
   margin-bottom: 24px;
+  width: 100%;
+  text-align: left;
+  text-indent: 0;
+
+  
 }
 
 .span-privacy {
@@ -873,3 +882,12 @@ input[type="checkbox"]:checked + label .span-privacy {
   border: none;
   fill: #f4f4fd;
 }
+
+.fieldset-list-comment{
+  margin-bottom: 16px;
+}
+
+.subscribe-input::placeholder{
+  color: #fff;
+  }
+  
