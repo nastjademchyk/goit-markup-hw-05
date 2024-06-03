@@ -510,7 +510,6 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form class="modal-form">
-          
           <div class="fieldset-list">
             <label for="user-name" class="form-label">Name</label>
             <div class="input-wrapper">
@@ -527,7 +526,7 @@
           </div>
 
           <div class="fieldset-list">
-            <label for="user-phone" class="form-label"> Phone </label>
+            <label for="user-phone" class="form-label">Phone </label>
             <div class="input-wrapper">
               <input
                 id="user-phone"
@@ -557,7 +556,7 @@
           </div>
 
           <div class="fieldset-list">
-            <label class="form-label" for="user-comment"> Comment </label>
+            <label class="form-label" for="user-comment">Comment </label>
             <textarea
               class="textarea-label"
               name="user-comment"
@@ -574,17 +573,18 @@
               name="user-privacy"
               value="true"
             />
-            <label class="form-label-inline" for="user-privacy"
-              >I accept the terms and conditions of the<span
-                class="span-privacy"
-              ></span>
+            <label class="form-label-inline" for="user-privacy">
+              <span class="span-privacy">
+                <svg class="solutions-span-icon" height="8" width="10" >
+                  <use href="./images/icon-vector.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a class="privacy-link" href="">Privacy Policy</a>
             </label>
           </div>
 
-          <div class="fieldset-list-checkbox">
-            <button class="modal-button" type="submit">Send</button>
-          </div>
+          <button class="modal-button" type="submit">Send</button>
         </form>
       </div>
     </div>
